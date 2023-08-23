@@ -1,0 +1,310 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: grid;
+  grid-template-rows: 2fr 12fr 1fr;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.logoArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  background-color: #e6fffd;
+}
+.menu {
+  flex: 1 1 0;
+}
+.menu img {
+  cursor: pointer;
+}
+.logo {
+  flex: 1.2 1 0;
+  display: flex;
+}
+.logo p {
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 0;
+}
+.body {
+  background-color: white;
+  text-align: center;
+  display: flex;
+}
+.leftPanel {
+  background-color: #f6f4eb;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.leftPanel img {
+  width: 32px;
+  height: 32px;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.home h2 {
+  text-align: left;
+  padding-left: 20px;
+  margin: 0 35px 0 35px;
+  margin: 20px 0 10px 0;
+  background-color: #e61085;
+  color: #fff;
+  cursor: pointer;
+}
+#h2:hover {
+  background-color: #ff01ea;
+}
+
+.title {
+  display: flex;
+  padding: 5px 5px 5px 20px;
+  gap: 5px;
+  margin: 0 35px 0 35px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.title:hover {
+  background-color: #ff01ea !important;
+}
+.titleChanged:hover {
+  background-color: #acfadf !important;
+}
+.titleChanged {
+  background-color: #91c8e4 !important;
+}
+
+#title {
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+#title p {
+  margin: 0;
+}
+.menuChanged {
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+.rightPanel {
+  flex: 3.5 1 0;
+  display: flex;
+  flex-direction: column;
+}
+.TodoGrid {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  /* grid-template-rows: repeat(auto-fill, minmax(30px, 1fr)); */
+  gap: 10px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+.TodoCard {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  font-size: 20px;
+  background-color: #fffbfb;
+  gap: 10px;
+  height: 100%;
+  padding-left: 20px;
+}
+.TodoCard h2 {
+  text-transform: uppercase;
+  display: block;
+  text-align: start;
+  margin: 0;
+}
+/* .TodoCard p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  display: inline; 
+  padding: 5px;
+  size: 50px;
+} 
+*/
+.TodoCard input {
+  display: inline;
+  margin: 10px;
+}
+.ContainerOne {
+  display: flex;
+  justify-content: space-between;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 10px;
+  text-transform: capitalize;
+}
+.ListContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#button {
+  align-self: center;
+  border-color: #4141fa;
+  border-radius: 8px;
+  background-color: #4141fa;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-weight: bolder;
+  font-size: xx-large;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-right: 250px;
+}
+#button:hover {
+  background-color: #1e1ea1;
+}
+#ProjectPop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  overflow: auto;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+#NamePop {
+  position: absolute;
+  left: 54%;
+  top: 30%;
+  margin-left: -202px;
+  font-family: "Raleway", sans-serif;
+}
+
+#mainPop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  overflow: auto;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+#popup {
+  position: absolute;
+  left: 54%;
+  top: 17%;
+  margin-left: -202px;
+  font-family: "Raleway", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  max-width: 400px;
+  min-width: 250px;
+  padding: 10px 25px 10px 0;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: "Raleway";
+  background-color: #f1f6f9;
+}
+img#close {
+  position: absolute;
+  right: -14px;
+  top: -14px;
+  cursor: pointer;
+}
+img#close2 {
+  position: absolute;
+  right: -14px;
+  top: -14px;
+  cursor: pointer;
+}
+
+form h1 {
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0;
+}
+#TodoListName,
+#priority,
+#Due-Date {
+  padding: 5px 10px 5px 3px;
+  margin-left: 35px;
+}
+#ProjectName {
+  padding: 5px 10px 5px 3px;
+  margin-left: 5px;
+}
+input:required {
+  border-color: red;
+}
+
+input,
+select {
+  border-radius: 4px;
+}
+label {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+  font-size: large;
+}
+textarea {
+  border-color: white;
+  margin-left: 103px;
+}
+.PopupBtn,
+#Add1,
+.btn1 {
+  width: 40%;
+  height: 45px;
+  border-color: #ff00f2;
+  border-radius: 8px;
+  background-color: #ff00f2;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+.PopupBtn:hover,
+#Add1:hover,
+#popup button:hover {
+  background-color: #ff60f7;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dad7cd;
+}
+.footer p {
+  font-weight: bold;
+  font-size: x-large;
+  margin: 0;
+}
+.footer img {
+  width: 48px;
+  height: 48px;
+}
